@@ -74,7 +74,8 @@ WHERE pl_rade IS NULL;
 ```sql
 SELECT pl_names
 FROM planets
-WHERE pl_rade IS NULL AND pl_bmasse IS NOT NULL;
+WHERE pl_rade IS NULL
+ AND pl_bmasse IS NOT NULL;
 ```
 **Answer:**
 
