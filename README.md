@@ -40,6 +40,21 @@ ORDER BY count DESC;
 |10| Pulsation Timing Variations | 2 |
 |11| Disk Kinematics | 1 |
 
+- Transit discovery method found 4640 exoplanets.
+- Radial Velocity discovery method found 1180 exoplanets.
+- Microlensing discovery method found 278 exoplanets.
+- Imaging discovery method found 97 exoplanets.
+- Transit Timing Variations discovery method found 40 exoplanets.
+- Eclipse Timing Variations discovery method found 17 exoplanets.
+- Orbital Brightness Modulation discovery method found 9 exoplanets.
+- Pulsar Timing discovery method found 8 exoplanets.
+- Astrometry discovery method found 6 exoplanets.
+- Pulsation Timing Variations discovery method found 2 exoplanets.
+- Disk Kinematics discovery method found 1 exoplanets.
+
+##
+
+**2. How many planets have a recorded mass but no recorded radius?**
 
 
 
@@ -48,8 +63,6 @@ ORDER BY count DESC;
 
 
 
-
-- How many planets haev a recorded mass but no recorded radius?
 - Which year saw the most exoplanet discoveries?
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
