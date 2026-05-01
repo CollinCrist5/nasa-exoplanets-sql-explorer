@@ -14,4 +14,4 @@ NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.edu
 
 ## Tools Used
 - SQL
-- MySQL
+- PostgreSQL + pgAdmin
