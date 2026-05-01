@@ -11,7 +11,7 @@ NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.edu
 
 
 ## The Questions that I am answering
-**1. Which discovery method has found the most planets?**
+#**1. Which discovery method has found the most planets?**
 
 ```sql
 SELECT discoverymethod,
@@ -52,9 +52,7 @@ ORDER BY count DESC;
 - Pulsation Timing Variations discovery method found 2 exoplanets.
 - Disk Kinematics discovery method found 1 exoplanets.
 
-##
-
-**2. How many planets have a recorded mass but no recorded radius?**
+##**2. How many planets have a recorded mass but no recorded radius?**
 
 ```sql
 SELECT COUNT(pl_bmasse)
@@ -79,16 +77,18 @@ SELECT pl_names
 FROM planets
 WHERE pl_rade IS NULL AND pl_bmasse IS NOT NULL;
 ```
+**Answer:**
 
+|   |  pl_name |
+| --| ---------- |
+| 1 | 11 Com b |
+| 2 | 11 UMi b |
+| 3 | 14 And b |
+...
+| 1570 | ups Leo b |
+| 1571 | xi Aql b |
 
-
-
-
-
-
-
-
-- Which year saw the most exoplanet discoveries?
+##3. Which year saw the most exoplanet discoveries?
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
 
