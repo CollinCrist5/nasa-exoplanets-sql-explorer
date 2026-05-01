@@ -26,10 +26,20 @@ ORDER BY count DESC;
 - Use **COUNT** to get the number of planets found by each discovery method that is still utilizing the **GROUP BY** statement
 
 **Answer:**
-| discoverymethod | count |
-| --------------- | ----- |
-| Transit | 4640 |
-| Radial Velocity | 1180 |
+|    | discoverymethod | count |
+| ----- | --------------- | ----- |
+|1| Transit | 4640 |
+|2| Radial Velocity | 1180 |
+|3| Microlensing | 278 |
+|4| Imaging | 97 |
+|5| Transit Timing Variations | 40 |
+|6| Eclipse Timing Variations | 17 |
+|7| Orbital Brightness Modulation | 9 |
+|8| Pulsar Timing | 8 |
+|9| Astrometry | 6 |
+|10| Pulsation Timing Variations | 2 |
+|11| Disk Kinematics | 1 |
+
 
 
 
