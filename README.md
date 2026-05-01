@@ -88,7 +88,7 @@ WHERE pl_rade IS NULL AND pl_bmasse IS NOT NULL;
 | 1571 | xi Aql b |
 
 ##
-3. Which year saw the most exoplanet discoveries?
+3. Which year saw the most exoplanet discoveries?d
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
 
