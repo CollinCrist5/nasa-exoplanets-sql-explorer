@@ -72,7 +72,7 @@ WHERE pl_rade IS NULL;
 - There were 1,571 exoplanets that have a recorded mass but no recorded radius.
 
 **Extra**
-I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass
+- I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass
 
 ```sql
 SELECT pl_names
