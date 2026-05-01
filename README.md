@@ -2,15 +2,15 @@
 
 This is an SQL project for exploring data from the NASA Exoplanet Archive.
 
-## Data Source
+### Data Source
 NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.edu
 
-## Tools Used
+### Tools Used
 - SQL
 - PostgreSQL + pgAdmin
 
 
-## The Questions that I am answering
+### The Questions that I am answering
 **1. Which discovery method has found the most planets?**
 
 ```sql
@@ -52,7 +52,7 @@ ORDER BY count DESC;
 - Pulsation Timing Variations discovery method found 2 exoplanets.
 - Disk Kinematics discovery method found 1 exoplanets.
 
-##
+###
 **2. How many planets have a recorded mass but no recorded radius?**
 
 ```sql
@@ -89,7 +89,7 @@ WHERE pl_rade IS NULL AND pl_bmasse IS NOT NULL;
 | 1570 | ups Leo b |
 | 1571 | xi Aql b |
 
-##
+###
 3. Which year saw the most exoplanet discoveries?
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
