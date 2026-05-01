@@ -56,6 +56,31 @@ ORDER BY count DESC;
 
 **2. How many planets have a recorded mass but no recorded radius?**
 
+```sql
+SELECT COUNT(pl_bmasse)
+FROM planets
+WHERE pl_rade IS NULL;
+```
+**Steps:**
+- Selected how many planets have a recorded mass where their radius is also NULL
+
+**Answer:**
+|   |  pl_bmasse |
+| --| ---------- |
+| 1 | 1571 |
+
+- There were 1,571 exoplanets that have a recorded mass but no recorded radius.
+
+**Extra**
+I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass
+
+```sql
+SELECT pl_names
+FROM planets
+WHERE pl_rade IS NULL AND pl_bmasse IS NOT NULL;
+```
+
+
 
 
 
