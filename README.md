@@ -18,11 +18,23 @@ SELECT discoverymethod,
     COUNT(discoverymethod)
 FROM planets
 GROUP BY discoverymethods
+ORDER BY count DESC;
 ```
 
 **Steps:**
 - Selected the discovery method using a grouping statement to get the types of discovery methods used
 - Use **COUNT** to get the number of planets found by each discovery method that is still utilizing the **GROUP BY** statement
+
+**Answer:**
+| discoverymethod | count |
+| --------------- | ----- |
+
+
+
+
+
+
+
 
 
 
