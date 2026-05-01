@@ -2,10 +2,10 @@
 
 This is an SQL project for exploring data from the NASA Exoplanet Archive.
 
-###Data Source
+### Data Source
 NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.edu
 
-###Tools Used
+### Tools Used
 - SQL
 - PostgreSQL + pgAdmin
 
