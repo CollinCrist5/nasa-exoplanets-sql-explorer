@@ -28,7 +28,8 @@ ORDER BY count DESC;
 **Answer:**
 | discoverymethod | count |
 | --------------- | ----- |
-
+| Transit | 4640 |
+| Radial Velocity | 1180 |
 
 
 
