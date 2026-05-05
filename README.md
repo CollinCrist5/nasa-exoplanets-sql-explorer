@@ -3,7 +3,7 @@
 This is an SQL project for exploring data from the NASA Exoplanet Archive.
 
 ## Data Source
-NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.edu
+NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.eduhttps://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1
 
 ## Tools Used
 - SQL
@@ -89,7 +89,17 @@ WHERE pl_rade IS NULL
 | 1571 | xi Aql b |
 
 ##
-3. Which year saw the most exoplanet discoveries?d
+3. Which year saw the most exoplanet discoveries?
+
+```sql
+SELECT disc_year, COUNT(disc_year)
+FROM planets
+GROUP BY disc_year
+ORDER BY COUNT(disc_year) DESC
+```
+**Steps:**
+- I wanted to see which years had the most exoplanets discovered so I selected the year and then the count of each 
+
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
 
