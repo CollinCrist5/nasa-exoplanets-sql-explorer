@@ -141,7 +141,8 @@ ORDER BY total_planets DESC
 - Using pl_rade (Radius of exoplanet measured in Earth radii), we made our own parameters on what size the planets are and filtered them accordingly.
 
 **Answer:**
-| | size_category | num_planets |
+|   | size_category | num_planets |
+| --| ----------- | ----- |
 | 1 | Neptune-Sized | 2037 |
 | 2 | Super-Earth | 1130 |
 | 3 | Jupiter-Sized | 975 |
