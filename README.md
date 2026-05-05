@@ -3,8 +3,8 @@
 This is an SQL project for exploring data from the NASA Exoplanet Archive.
 
 ## Data Source
-NASA Exoplanet Archive: https://exoplanetarchive.ipac.caltech.eduhttps://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1
-
+NASA Exoplanet Archive: [https://exoplanetarchive.ipac.caltech.eduhttps://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1
+](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1)
 ## Tools Used
 - SQL
 - PostgreSQL + pgAdmin
