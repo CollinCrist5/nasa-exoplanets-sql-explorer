@@ -92,13 +92,29 @@ WHERE pl_rade IS NULL
 3. Which year saw the most exoplanet discoveries?
 
 ```sql
-SELECT disc_year, COUNT(disc_year)
+SELECT disc_year AS discovery_year,
+COUNT(disc_year) AS num_planets
 FROM planets
+WHERE soltype = 'Published Confirmed'
 GROUP BY disc_year
 ORDER BY COUNT(disc_year) DESC
 ```
 **Steps:**
-- I wanted to see which years had the most exoplanets discovered so I selected the year and then the count of each 
+- I wanted to see which years had the most exoplanets discovered so I selected the year and then the count of each planet discovered based on that year
+- I only wanted to see the actual Published exoplanets and not the candidates of exoplanets (celestial objects identified by telescopes like Kepler or TESS as potential planets orbiting stars outside our solar system, which have not yet been confirmed by follow-up observations)
+
+**Answer:**
+
+|    | discovery_year | num__planets |
+| ----- | --------------- | ----- |
+| 1 | 2016 | 1496 |
+| 2 | 2014 | 869 |
+| 3 | 2021 | 560 |
+| 4 | 2022 | 369 |
+...
+| 33 | 1995 | 1 |
+| 34 | 1994 | 1 |
+
 
 - How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
 - Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
