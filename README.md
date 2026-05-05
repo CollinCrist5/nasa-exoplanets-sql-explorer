@@ -22,8 +22,8 @@ ORDER BY count DESC;
 ```
 
 **Steps:**
-- Selected the discovery method using a grouping statement to get the types of discovery methods used
-- Use **COUNT** to get the number of planets found by each discovery method that is still utilizing the **GROUP BY** statement
+- Selected the discovery method using a grouping statement to get the types of discovery methods used.
+- Use **COUNT** to get the number of planets found by each discovery method that is still utilizing the **GROUP BY** statement.
 
 **Answer:**
 |    | discoverymethod | count |
@@ -61,7 +61,7 @@ FROM planets
 WHERE pl_rade IS NULL;
 ```
 **Steps:**
-- Selected how many planets have a recorded mass where their radius is also NULL
+- Selected how many planets have a recorded mass where their radius is also NULL.
 
 **Answer:**
 |   |  pl_bmasse |
@@ -69,7 +69,7 @@ WHERE pl_rade IS NULL;
 | 1 | 1571 |
 
 - There were 1,571 exoplanets that have a recorded mass but no recorded radius.
-- There wasn't enough data for me. I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass
+- There wasn't enough data for me. I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass.
 
 ```sql
 SELECT pl_names
@@ -88,6 +88,8 @@ WHERE pl_rade IS NULL
 | 1570 | ups Leo b |
 | 1571 | xi Aql b |
 
+- This shows each planet that has a recorded mass but no radius.
+
 ##
 3. Which year saw the most exoplanet discoveries?
 
@@ -100,8 +102,8 @@ GROUP BY disc_year
 ORDER BY COUNT(disc_year) DESC
 ```
 **Steps:**
-- I wanted to see which years had the most exoplanets discovered so I selected the year and then the count of each planet discovered based on that year
-- I only wanted to see the actual Published exoplanets and not the candidates of exoplanets (celestial objects identified by telescopes like Kepler or TESS as potential planets orbiting stars outside our solar system, which have not yet been confirmed by follow-up observations)
+- I wanted to see which years had the most exoplanets discovered so I selected the year and then the count of each planet discovered based on that year.
+- I only wanted to see the actual Published exoplanets and not the candidates of exoplanets (celestial objects identified by telescopes like Kepler or TESS as potential planets orbiting stars outside our solar system, which have not yet been confirmed by follow-up observations).
 
 **Answer:**
 
@@ -115,7 +117,38 @@ ORDER BY COUNT(disc_year) DESC
 | 33 | 1995 | 1 |
 | 34 | 1994 | 1 |
 
+- This shows the the number of confirmed planets for each year from the beginning of NASA searching for exoplanets.
 
-- How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
-- Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
+##
+4. How many planets fall into each size category - Earth-sized, Super-Earth, Neptune-sized, and Jupiter-sized?
+```sql
+SELECT 
+	CASE
+		WHEN pl_rade BETWEEN 0.5 AND 1.25 THEN 'Earth-sized'
+		WHEN pl_rade BETWEEN 1.25 AND 2.0 THEN 'Super-Earth'
+		WHEN pl_rade BETWEEN 2.0 AND 6.0 THEN 'Neptune-Sized'
+		WHEN pl_rade > 6.0 THEN 'Jupiter-Sized'
+		ELSE 'Unknown'
+	END AS size_category,
+	COUNT(pl_name) AS total_planets
+FROM planets
+WHERE pl_rade IS NOT NULL
+GROUP BY size_category
+ORDER BY total_planets DESC
+```
+**Steps:**
+- There are no columns regarding the size_category so we had to make a case statement to be able to get them in the format that we wanted.
+- Using pl_rade (Radius of exoplanet measured in Earth radii), we made our own parameters on what size the planets are and filtered them accordingly.
+
+**Answer:**
+| | size_category | num_planets |
+| 1 | Neptune-Sized | 2037 |
+| 2 | Super-Earth | 1130 |
+| 3 | Jupiter-Sized | 975 |
+| 4 | Earth-Sized | 544 |
+
+
+
+##
+5. Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
 
