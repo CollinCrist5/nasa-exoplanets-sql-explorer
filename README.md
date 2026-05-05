@@ -1,3 +1,5 @@
+<img width="1794" height="1009" alt="{74451669-2510-4C43-96FF-36541856C4A1}" src="https://github.com/user-attachments/assets/f8c8c1a1-80b5-4582-8e85-fbb31710041c" />
+
 # nasa-exoplanets-sql-explorer
 
 This is an SQL project for exploring data from the NASA Exoplanet Archive.
