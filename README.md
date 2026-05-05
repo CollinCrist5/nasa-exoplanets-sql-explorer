@@ -149,7 +149,23 @@ ORDER BY total_planets DESC
 | 4 | Earth-Sized | 544 |
 
 
-
 ##
 5. Which planets are potentially in the habitable zone (orbital period between 200 and 500 days and radius less than 2 Earth radii)?
+```sql
+SELECT pl_name, ROUND(sy_dist::NUMERIC * 3.262, 2) AS distance_ly
+FROM planets
+WHERE (pl_orbper BETWEEN 200 AND 500) 
+AND pl_rade < 2
+```
+**Steps:**
+- I wanted to see which planets are in the habitable zone so I made sure to filter to check to make sure they are within the habitable zone parameters.
+- Distance was measured in Parsecs but I wanted it in Light Years so I multiplied it by 3.262
 
+**Answer:**
+|   | pl_name | distance_ly |
+| --| ----------- | ----- |
+| 1 | Kepler-1638 b | 4976.25 |
+| 2 | Kepler-441 b | 874.23 |
+| 3 | Kepler-452 b | 1799.73 |
+| 4 | Kepler-62 f | 981.45 |
+| 5 | Kepler-69 c | 2383 |
