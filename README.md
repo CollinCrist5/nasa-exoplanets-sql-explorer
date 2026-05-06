@@ -1,4 +1,5 @@
-<img width="1794" height="1009" alt="{74451669-2510-4C43-96FF-36541856C4A1}" src="https://github.com/user-attachments/assets/f8c8c1a1-80b5-4582-8e85-fbb31710041c" />
+<img width="1786" height="1005" alt="{91CD6F9C-A31D-4D0E-990F-B0003DDED840}" src="https://github.com/user-attachments/assets/7c9cd60a-663c-4e09-8c2d-ff387ed04ba1" />
+
 
 # nasa-exoplanets-sql-explorer
 
