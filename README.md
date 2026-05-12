@@ -21,7 +21,7 @@ NASA Exoplanet Archive: [https://exoplanetarchive.ipac.caltech.eduhttps://exopla
 SELECT discoverymethod,
     COUNT(discoverymethod)
 FROM planets
-GROUP BY discoverymethods
+GROUP BY discoverymethod
 ORDER BY count DESC;
 ```
 
@@ -76,7 +76,7 @@ WHERE pl_rade IS NULL;
 - There wasn't enough data for me. I wanted to see which exoplanets didn't have a recorded radius while having a recorded mass.
 
 ```sql
-SELECT pl_names
+SELECT pl_name
 FROM planets
 WHERE pl_rade IS NULL
  AND pl_bmasse IS NOT NULL;
@@ -111,7 +111,7 @@ ORDER BY COUNT(disc_year) DESC
 
 **Answer:**
 
-|    | discovery_year | num__planets |
+|    | discovery_year | num_planets |
 | ----- | --------------- | ----- |
 | 1 | 2016 | 1496 |
 | 2 | 2014 | 869 |
